@@ -1,0 +1,180 @@
+.main_header_css
+{
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    font-size: 20px;
+    padding: 100px;
+}
+
+.main_center_img
+{
+    background-position: center;
+}
+
+.main_img
+{
+    width: 100%;
+    height: auto;
+}
+
+.row_room
+{
+    padding-bottom: 100px;
+}
+
+.room_img
+{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    align-content: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.oferta_img
+{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#div_main_h1
+{
+    margin: 0 auto;
+}
+
+button
+{
+    width: auto;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 5%;
+    font-weight: bold;
+    background-color: #1A1C1B;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#button_oferta
+{
+    width: 100%;
+}
+
+#button_booking
+{
+    background-color: rgb(0, 59, 149);
+    margin-bottom: 40px;
+}
+
+figure a
+{
+    text-decoration: none;
+    color: black;
+}
+
+button a
+{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover
+{
+    background-color: rgb(37, 38, 0);
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: rgb(240, 233, 205);
+}
+
+.icons
+{
+    width: 10px;
+    height: 10px;
+}
+
+figurecaption
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer_section_css
+{
+    padding: 10px;
+    background-color: #1A1C1B;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer_section_css a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#div_footer
+{
+    margin: 0 auto;
+}
+
+.main_section_css
+{
+    font-size: 17px;
+}
+
+.container-fluid
+{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#fluid_color
+{
+    background-color: rgb(237, 226, 180);
+}
+
+nav
+{
+    color: rgb(237, 226, 180);
+}
+
+.nav-item
+{
+    font-size: 20px;
+}
+
+div
+{
+    align-content: center;
+}
