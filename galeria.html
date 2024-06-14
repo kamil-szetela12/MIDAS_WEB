@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Apartament SPA & MIDAS Strzyżów</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--Pasek nawigacyjny-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-xl ">
+        <a class="navbar-brand ms-3" href="main.html"><img src="img/logo.png" width="60px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"
+            aria-controls="#mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainmenu">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="rezerwacje.html">Rezerwacje</a>
+                </li>
+
+                <li class="nav-item me-2 ">
+                    <a class="nav-link" href="apartament.html">Apartament SPA</a>
+                </li>
+
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="submenu"
+                        aria-haspopup="true">Pokoje</a>
+
+                    <div class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="submenu">
+                        <a class="dropdown-item" href="apartament.html">7.Apartament SPA</a>
+                        <a class="dropdown-item" href="azyl.html">12.Azyl</a>
+                        <a class="dropdown-item" href="next.html">11.Next</a>
+                        <a class="dropdown-item" href="latabu.html">2.Latabu </a>
+                        <a class="dropdown-item" href="dream.html">3.Dream</a>
+                        <a class="dropdown-item" href="safari.html">4.Safari</a>
+                        <a class="dropdown-item" href="ritzz.html">5.Ritzz</a>
+                        <a class="dropdown-item" href="niebo.html">6.Niebo</a>
+                        <a class="dropdown-item" href="garden.html">8.Garden</a>
+                        <a class="dropdown-item" href="primo.html">19.Primo</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" href="#" id="submenu2"
+                        aria-haspopup="true">Oferta</a>
+
+                    <div class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="submenu2">
+                        <a class="dropdown-item" href="gastronomia.html">Gastronomia i Śniadania</a>
+                        <a class="dropdown-item" href="konferencje.html">Konferencje</a>
+                        <a class="dropdown-item" href="party-club.html">Party Club Bankiety</a>
+                        <a class="dropdown-item" href="zareczyny.html">Zaręczyny</a>
+                        <a class="dropdown-item" href="promocje.html">Promocje</a>
+                        <a class="dropdown-item" href="jacht.html">Jacht Jez. Solina</a>
+                    </div>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="atrakcje.html">Atrakcje</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="wirtualny-spacer.html">Wirtualny spacer</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="kamera.html">Widok z okna</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Główna część strony-->
+    <main>
+        <section class="main_section_css">
+
+            <!--Nagłówek strony głównej-->
+            <header class="main_header_css" style='background-image: url("img/main_baner.jpg")'>
+                <div class="col-sm-12 col-md-6" id="div_main_h1">
+                    <h1>Galeria</h1>
+                </div>
+            </header>
+
+            <div class="container-fluid" id="fluid_color">
+                <div class="container text-center">
+                    <div class="col-12" id="div_main_h1">
+                        <h1>Galeria zdjęć hotelu</h1>
+                        <button onclick="gallery_all()" class="gallery_button">Wszystkie</button>
+                        <button onclick="gallery_rooms()" class="gallery_button">Pokoje</button>
+                        <button onclick="gallery_spa()" class="gallery_button">Apartament Spa</button>
+                        <button onclick="gallery_sniadanie()" class="gallery_button">Śniadania</button>
+                        <button onclick="gallery_recepcja()" class="gallery_button">Recepcja</button>
+                    </div>
+                    <div class="row" id="gallery_block">
+ 
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--Stopka-->
+    <footer>
+        <section class="footer_section_css">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 col-md-4" id="div_footer">
+                        38-100 Strzyżów, ul. Słowackiego 2<br>
+                        Poz. geogr. GPS: E21 47'16'' N49 52'08''<br>
+                        tel/fax: <a href="tel:172764777">+48 17 2764 777</a>; <a href="tel:502420777">+48 502 420
+                            777</a><br>
+                        e-mail: <a href="mailto:midas@orange.pl">midas@orange.pl</a>
+                    </div>
+                    <div class="col-5 col-md-3" id="div_footer">
+                        <a href="main.html"><img src="img/logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--linki Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        var atrakcje = "<div class='col-6 col-md-4'><figure><img src='img/main_atrakcje.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/atrakcje1.png' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/atrakcje2.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/atrakcje3.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var azyl = "<div class='col-6 col-md-4'><figure><img src='img/main_azyl.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/azyl1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/azyl2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var dream = "<div class='col-6 col-md-4'><figure><img src='img/main_dream.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/dream2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var garden = "<div class='col-6 col-md-4'><figure><img src='img/main_garden.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/garden1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/garden2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var gastronomia = "<div class='col-6 col-md-4'><figure><img src='img/main_sniadanie.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/gastronomia1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/gastronomia2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var jacht = "<div class='col-6 col-md-4'><figure><img src='img/main_jacht.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/jacht1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/jacht2.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/jacht3.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/jacht4.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var konferencje = "<div class='col-6 col-md-4'><figure><img src='img/main_konferencje.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/konferencje1.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var next = "<div class='col-6 col-md-4'><figure><img src='img/main_next.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/next1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/next2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>"
+        var niebo = "<div class='col-6 col-md-4'><figure><img src='img/main_niebo.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/niebo2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var odwiedzli_nas = "<div class='col-6 col-md-4'><figure><img src='img/odwiedzili1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili2.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili3.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili4.png' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili5.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili6.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili7.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/odwiedzili8.png' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var partyclub = "<div class='col-6 col-md-4'><figure><img src='img/main_partyclub.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/partyclub1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/partyclub2.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/partyclub3.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var rezerwacje = "<div class='col-6 col-md-4'><figure><img src='img/main_rezerwacje.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/rezerwacje1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/rezerwacje2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var primo = "<div class='col-6 col-md-4'><figure><img src='img/main_primo.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/primo1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/primo2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var ritzz = "<div class='col-6 col-md-4'><figure><img src='img/main_ritzz.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/ritzz1.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var safari = "<div class='col-6 col-md-4'><figure><img src='img/main_safari.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/safari2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var spa = "<div class='col-6 col-md-4'><figure><img src='img/main_spa.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/spa1.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/spa2.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        var others = "<div class='col-6 col-md-4'><figure><img src='img/main_zareczyny.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/main_opis.jpg' class='main_img' alt='brak zdjęcia'></figure></div><div class='col-6 col-md-4'><figure><img src='img/main_baner.jpg' class='main_img' alt='brak zdjęcia'></figure></div>"
+        var latabu = "<div class='col-6 col-md-4'><figure><img src='img/main_latabu.jpg' class='main_img' alt='brak zdjęcia'></figure></div>";
+        function gallery_all()
+        {
+            gallery_block.innerHTML = others+dream+garden+gastronomia+jacht+konferencje+next+niebo+partyclub+primo+rezerwacje+ritzz+spa+safari+latabu;
+        }
+
+        function gallery_rooms()
+        {
+            gallery_block.innerHTML = spa+azyl+dream+garden+next+niebo+primo+ritzz+safari+latabu;
+        }
+
+        function gallery_sniadanie()
+        {
+            gallery_block.innerHTML = gastronomia;
+        }
+
+        function gallery_spa()
+        {
+            gallery_block.innerHTML = spa;
+        }
+
+        function gallery_recepcja()
+        {
+            gallery_block.innerHTML = rezerwacje;
+        }
+
+        gallery_all();
+    </script>
+</body>
+
+</html>

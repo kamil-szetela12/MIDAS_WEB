@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirtualny spacer | Apartament SPA & MIDAS Strzyżów</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--Pasek nawigacyjny-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-xl ">
+        <a class="navbar-brand ms-3" href="main.html"><img src="img/logo.png" width="60px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"
+            aria-controls="#mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainmenu">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="rezerwacje.html">Rezerwacje</a>
+                </li>
+
+                <li class="nav-item me-2 ">
+                    <a class="nav-link" href="apartament.html">Apartament SPA</a>
+                </li>
+
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="submenu"
+                        aria-haspopup="true">Pokoje</a>
+
+                    <div class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="submenu">
+                        <a class="dropdown-item" href="apartament.html">7.Apartament SPA</a>
+                        <a class="dropdown-item" href="azyl.html">12.Azyl</a>
+                        <a class="dropdown-item" href="next.html">11.Next</a>
+                        <a class="dropdown-item" href="latabu.html">2.Latabu </a>
+                        <a class="dropdown-item" href="dream.html">3.Dream</a>
+                        <a class="dropdown-item" href="safari.html">4.Safari</a>
+                        <a class="dropdown-item" href="ritzz.html">5.Ritzz</a>
+                        <a class="dropdown-item" href="niebo.html">6.Niebo</a>
+                        <a class="dropdown-item" href="garden.html">8.Garden</a>
+                        <a class="dropdown-item" href="primo.html">19.Primo</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown me-2">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" href="#" id="submenu2"
+                        aria-haspopup="true">Oferta</a>
+
+                    <div class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="submenu2">
+                        <a class="dropdown-item" href="gastronomia.html">Gastronomia i Śniadania</a>
+                        <a class="dropdown-item" href="konferencje.html">Konferencje</a>
+                        <a class="dropdown-item" href="party-club.html">Party Club Bankiety</a>
+                        <a class="dropdown-item" href="zareczyny.html">Zaręczyny</a>
+                        <a class="dropdown-item" href="promocje.html">Promocje</a>
+                        <a class="dropdown-item" href="jacht.html">Jacht Jez. Solina</a>
+                    </div>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="atrakcje.html">Atrakcje</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="wirtualny-spacer.html">Wirtualny spacer</a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="kamera.html">Widok z okna</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Główna część strony-->
+    <main>
+        <section class="main_section_css">
+
+            <!--Nagłówek strony głównej-->
+            <header class="main_header_css" style='background-image: url("img/main_baner.jpg")'>
+                <div class="col-sm-12 col-md-6" id="div_main_h1">
+                    <h1>Wirtualny Spacer</h1>
+                </div>
+            </header>
+
+            <div class="container-fluid" id="fluid_color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 order-last order-md-first">
+                            <figure id="virtual_block">
+                                
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <figure>
+                                <h1>Nawigacja</h1>
+                                <button class="virtual_button" onclick="virtual_spa()">Apartament Spa</button><br>
+                                <button class="virtual_button" onclick="virtual_latabu()">La Tabu</button><br>
+                                <button class="virtual_button" onclick="virtual_niebo()">Niebo</button><br>
+                                <button class="virtual_button" onclick="virtual_hol()">Hol</button><br>
+                                <button class="virtual_button" onclick="virtual_partyclub()">Party Club</button><br>
+                                <button class="virtual_button" onclick="virtual_garden()">Garden</button><br>
+                                <button class="virtual_button" onclick="virtual_ritzz()">Ritzz</button><br>
+                                <button class="virtual_button" onclick="virtual_recepcja()">Recepcja</button><br>
+                                <button class="virtual_button" onclick="virtual_rynek()">Rynek</button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--Stopka-->
+    <footer>
+        <section class="footer_section_css">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 col-md-4" id="div_footer">
+                        38-100 Strzyżów, ul. Słowackiego 2<br>
+                        Poz. geogr. GPS: E21 47'16'' N49 52'08''<br>
+                        tel/fax: <a href="tel:172764777">+48 17 2764 777</a>; <a href="tel:502420777">+48 502 420
+                            777</a><br>
+                        e-mail: <a href="mailto:midas@orange.pl">midas@orange.pl</a>
+                    </div>
+                    <div class="col-5 col-md-3" id="div_footer">
+                        <a href="main.html"><img src="img/logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--linki Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var spa = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718356136931!6m8!1m7!1sCAoSLEFGMVFpcE8xUFdURUNKV0c2bVFCaGZvaXNtY3FuSlpxeTZUa3FYZS0zRFBk!2m2!1d49.86877848909987!2d21.78843489990027!3f204.88442879318848!4f-15.091663270179964!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var latabu = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718356576954!6m8!1m7!1sCAoSLEFGMVFpcE1lc3Ewb19WNDdoVTJ0Tk5jMUpRcVNZZnhUb1Bnd0hPMVRFTlFk!2m2!1d49.86881263140864!2d21.78813515606748!3f169.06066900922357!4f-7.372868393946476!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var niebo = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718356871489!6m8!1m7!1sCAoSLEFGMVFpcE4wbm52QlNyRk5kTTczYW5teUVFMk9rSVhJRHh1Z2M0QXpObG1h!2m2!1d49.8688183098611!2d21.78821159902441!3f98.72!4f-15.030000000000001!5f0.5970117501821992" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var hol = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718356954721!6m8!1m7!1sCAoSLEFGMVFpcE1wdEVaRDM3anFXY3ZNaWJraFlIbE1maWFqdEFib0VlcG1RSVZ4!2m2!1d49.86875147448054!2d21.78824847939836!3f136.7056274414062!4f0!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var partyclub = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718357026360!6m8!1m7!1sCAoSLEFGMVFpcE16MDFVWUg1dzBYNkVnZ0dPZXBKekxJdkx2R1hESzlfWS1mZnBS!2m2!1d49.86870528082168!2d21.78787610270217!3f100!4f10!5f0.5970117501821992" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var garden = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718357074699!6m8!1m7!1sCAoSLEFGMVFpcE9tXzFuMWVITWRwZFNTOTFOMEVwNG5UTWVWTFZfYnVqMmNsR0Iy!2m2!1d49.86880602361082!2d21.78806944194662!3f91.83!4f-1.9200000000000017!5f0.5970117501821992" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var ritzz = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718357087619!6m8!1m7!1sCAoSLEFGMVFpcE9HMnh4bHZJcURBOGhmdEdOUExjZ1hnWTFZTHBHWFRQdWxYTmZ0!2m2!1d49.86875067116726!2d21.78807279470789!3f180.06!4f-6.670000000000002!5f0.5970117501821992" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var recepcja = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718357099539!6m8!1m7!1sCAoSLEFGMVFpcE5IYWJDeHlXVTVoMmNXXzYyc3gtckZDTGxvaHlFVVhkWkloSEpX!2m2!1d49.86876284428772!2d21.78797616914358!3f176.68!4f0!5f0.5970117501821992" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        var rynek = '<iframe src="https://www.google.com/maps/embed?pb=!4v1718357110208!6m8!1m7!1sCAoSLEFGMVFpcE9aQ2hFTTVEazk0a2tOcW5tYTFiWXZ3QURBbWxuVi05aVlhZ0FV!2m2!1d49.86865120963488!2d21.78771900985987!3f267.22!4f0.4300000000000068!5f0.5970117501821992" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+
+        function virtual_spa(){
+            virtual_block.innerHTML = spa;
+        }
+
+        function virtual_latabu(){
+            virtual_block.innerHTML = latabu;
+        }
+
+        function virtual_niebo(){
+            virtual_block.innerHTML = niebo;
+        }
+
+        function virtual_hol(){
+            virtual_block.innerHTML = hol;
+        }
+
+        function virtual_partyclub(){
+            virtual_block.innerHTML = partyclub;
+        }
+
+        function virtual_garden(){
+            virtual_block.innerHTML = garden;
+        }
+
+        function virtual_ritzz(){
+            virtual_block.innerHTML = ritzz;
+        }
+
+        function virtual_recepcja(){
+            virtual_block.innerHTML = recepcja;
+        }
+
+        function virtual_rynek(){
+            virtual_block.innerHTML = rynek;
+        }
+
+        virtual_spa();
+    </script>
+
+</body>
+
+</html>
