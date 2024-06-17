@@ -6,8 +6,12 @@
     max-width: 100%;
     height: auto;
     color: white;
-    font-size: 20px;
-    padding: 100px;
+    padding: 50px;
+}
+
+.main_header_css h1
+{
+    margin-top: 100px;
 }
 
 li a
@@ -87,8 +91,7 @@ a
 
 h1
 {
-    font-size: 50px;
-    padding-bottom: 20px;
+    font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
