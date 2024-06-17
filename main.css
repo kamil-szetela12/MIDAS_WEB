@@ -214,4 +214,11 @@ nav
 div
 {
     align-content: center;
+    text-align: center;
+}
+
+li
+{
+    text-align: left;
+    list-style-position: inside;
 }
